@@ -53,8 +53,8 @@ public class FaceOverlayView extends View {
         super.onDraw(canvas);
         if (faces == null || faces.isEmpty() || imageWidth == 0 || imageHeight == 0) return;
 
-        float scaleX = getWidth() / (float) imageHeight;
-        float scaleY = getHeight() / (float) imageWidth;
+        float scaleX = getWidth() / (float) imageWidth;
+        float scaleY = getHeight() / (float) imageHeight;
 
         Matrix transform = new Matrix();
         if (isFrontCamera) {
